@@ -1,10 +1,13 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <>
       <p>Welcome to the home page!</p>
-      <Button>Create Bug</Button>
+      <Link href="/dashboard">
+        <Button>Create Bug</Button>
+      </Link>
     </>
   );
 }
